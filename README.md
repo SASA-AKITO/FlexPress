@@ -6,7 +6,7 @@
 ファイルの圧縮形式は数多くの種類が存在しています．これらは，それぞれインターフェースが異なり，使いこなすには複雑です．このツールはそれらの圧縮形式を統一的なインターフェースで操作可能にします．
 
 ## Usage
-```
+```sh
 FlexPress [OPTIONS] <ARGUMENTS...>
 OPTIONS
   -m, --mode <MODE>     Mode of operation. available: extract, archive, and auto.
