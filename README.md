@@ -9,10 +9,10 @@
 ```sh
 FlexPress [OPTIONS] <ARGUMENTS...>
 OPTIONS
-  -m, --mode <MODE>     操作モードを extract, archive, auto から選択．デフォルトは auto.
-  -d, --dest <DEST>     出力ディレクトリの指定．デフォルトは current directory.
+  -m, --mode <MODE>     操作モードを extract, archive, auto から選択する．デフォルトは auto.
+  -d, --dest <DEST>     出力ディレクトリを指定する．デフォルトは current directory.
   -o, --output <FILE>   アーカイブの出力ファイル．デフォルトは FlexPress.zip.
-  -h, --help            helpメッセージを表示．
+  -h, --help            helpメッセージを表示する．
 ARGUMENTS
   extract mode: アーカイブファイルを展開する．
   archive mode: ファイルをアーカイブする.
