@@ -10,7 +10,7 @@
 FlexPress [OPTIONS] <ARGUMENTS...>
 OPTIONS
   -m, --mode <MODE>     操作モードを extract, archive, auto から選択する．デフォルトは auto.
-  -d, --dest <DEST>     出力ディレクトリを指定する．デフォルトは current directory.
+  -d, --dest <DEST>     出力先のディレクトリを指定する．デフォルトは current directory.
   -o, --output <FILE>   アーカイブの出力ファイル．デフォルトは FlexPress.zip.
   -h, --help            helpメッセージを表示する．
 ARGUMENTS
