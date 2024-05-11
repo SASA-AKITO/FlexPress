@@ -32,7 +32,7 @@ mod tests {
 
     #[test]
     fn test_run() {
-        let opts = CliOpts::parse_from(&["fcpst_test", "-o", "test.zip", "src", "LICENSE", "README.md", "Cargo.toml"]);
+        let opts = CliOpts::parse_from(&["flexpress_test", "-o", "test.zip", "src", "LICENSE", "README.md", "Cargo.toml"]);
         assert_eq!(opts.mode, RunMode::Auto);
         assert_eq!(opts.output, Some(PathBuf::from("test.zip")));
         assert_eq!(opts.args.len(), 4);
