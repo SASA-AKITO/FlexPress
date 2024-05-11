@@ -15,9 +15,7 @@ mod tests {
     }
 } */
 
-use std::path::PathBuf;
 use clap::Parser;
-use cli::{RunMode, CliOpts};
 use cli::CliOpts;
 
 mod cli;
@@ -28,11 +26,13 @@ fn main() {
 
 #[cfg(test)]
 mod tests {
+    use std::path::PathBuf;
+    use cli::RunMode;
     use super::*;
 
     #[test]
     fn test_run() {
-        let opts = CliOpts::parse_from(&["flexpress_test", "-o", "test.zip", "src", "LICENSE", "README.md", "Cargo.toml"]);
+        let opts = CliOpts::parse_from(&["fcpst_test", "-o", "test.zip", "src", "LICENSE", "README.md", "Cargo.toml"]);
         assert_eq!(opts.mode, RunMode::Auto);
         assert_eq!(opts.output, Some(PathBuf::from("test.zip")));
         assert_eq!(opts.args.len(), 4);
