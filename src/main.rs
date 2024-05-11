@@ -18,6 +18,7 @@ mod tests {
 use std::path::PathBuf;
 use clap::Parser;
 use cli::{RunMode, CliOpts};
+use cli::CliOpts;
 
 mod cli;
 
