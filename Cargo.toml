@@ -3,7 +3,6 @@ name = "flexpress"
 version = "0.1.0"
 description = "A tool for archiving files and directories and extracting several archive formats."
 repository = "https://github.com/SASA-AKITO/FlexPress"
-
 readme = "README.md"
 authors = [
 "Akito Sasahara <i486093@cc.kyoto-su.ac.jp"
