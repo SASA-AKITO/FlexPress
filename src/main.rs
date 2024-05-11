@@ -1,4 +1,4 @@
-fn hello() -> String {
+/* fn hello() -> String {
     "Hello, world!".to_string()
 }
 fn main() {
@@ -13,9 +13,9 @@ mod tests {
     fn test_hello() {
         assert_eq!(hello(), "Hello, world!");
     }
-}
+} */
 
-/* use std::path::PathBuf;
+use std::path::PathBuf;
 use clap::Parser;
 use cli::{RunMode, CliOpts};
 
@@ -37,4 +37,4 @@ mod tests {
         assert_eq!(opts.args.len(), 4);
         assert_eq!(opts.args, vec![PathBuf::from("src"), PathBuf::from("LICENSE"), PathBuf::from("README.md"), PathBuf::from("Cargo.toml")]);
     }
-} */
+}
