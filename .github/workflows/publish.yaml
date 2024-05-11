@@ -1,6 +1,6 @@
 name: publish_site_release_assets
 on:
-  push:
+  pull_request:
     branches:
       - main
     types: [closed]
