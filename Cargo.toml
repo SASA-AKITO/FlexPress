@@ -1,10 +1,10 @@
 [package]
-name = "flexpres"
+name = "FlexPress"
 version = "0.1.0"
 edition = "2021"
 
 license = "MIT"
-repository = "https://github.com/SASA-AKITO/flexpress"
+repository = "https://github.com/SASA-AKITO/FlexPress"
 readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
