@@ -65,7 +65,7 @@ docker run -it --rm -v $PWD:/workdir ghcr.io/SASA-AKITO/FlexPress:0.5.0 [OPTIONS
 
 ### Authors
 
-* SASA-AKITO ([SASA-AKITO](https://github.com/SASA-AKITO/))
+* Sasahara Akito ([SASA-AKITO](https://github.com/SASA-AKITO/))
 
 ### The Logo and the Origin of FlexPress
 
