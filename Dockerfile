@@ -4,25 +4,25 @@ ARG VERSION=0.5.0
 ARG TARGETPLATFORM
 ARG PLATFORM=${TARGETPLATFORM#linux/}
 
-WORKDIR /home/FlexPress
+WORKDIR /home/flexpress
 
 RUN apk add --no-cache curl tar gzip \
- && curl -LO https://github.com/SASA-AKITO/FlexPress/releases/download/v${VERSION}/FlexPress-${VERSION}_linux_${PLATFORM}.tar.gz \
- && tar xvfz FlexPress-${VERSION}_linux_${PLATFORM}.tar.gz 
+ && curl -LO https://github.com/SASA-AKITO/flexpress/releases/download/v${VERSION}/flexpress-${VERSION}_linux_${PLATFORM}.tar.gz \
+ && tar xvfz flexpress-${VERSION}_linux_${PLATFORM}.tar.gz 
 
 FROM alpine:3.16
 
 ARG VERSION=0.5.0
 
-LABEL org.opencontainers.image.source https://github.com/SASA-AKITO/FlexPress
+LABEL org.opencontainers.image.source https://github.com/SASA-AKITO/flexpress
 
 RUN  apk add --no-cache libgcc musl-dev \
   && adduser -D nonroot \
   && mkdir -p /workdir
 
-COPY --from=builder /home/FlexPress/FlexPress-${VERSION}/FlexPress /opt/FlexPress/FlexPress
+COPY --from=builder /home/flexpress/flexpress-${VERSION}/flexpress /opt/flexpress/flexpress
 
 WORKDIR /workdir
 USER nonroot
 
-ENTRYPOINT [ "/opt/FlexPress/FlexPress" ]
+ENTRYPOINT [ "/opt/flexpress/flexpress" ]
