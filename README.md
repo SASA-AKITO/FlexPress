@@ -59,8 +59,3 @@ docker run -it --rm -v $PWD:/workdir ghcr.io/SASA-AKITO/FlexPress:0.5.0 [OPTIONS
 ### Authors
 
 * Sasahara Akito ([SASA-AKITO](https://github.com/SASA-AKITO/))
-
-### The Logo and the Origin of FlexPress
-
-The general word, FlexPress, is a bag for carrying things.
-From this, I chose the name of the tool, FlexPress, as a tool for packing files and directories carelessly.
