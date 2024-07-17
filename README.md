@@ -5,13 +5,10 @@
 [![Rust Report Card](https://rust-reportcard.xuri.me/badge/github.com/sasa-akito/flexpress)](https://rust-reportcard.xuri.me/report/github.com/sasa-akito/flexpress)
 [![DOI](https://zenodo.org/badge/786669064.svg)](https://zenodo.org/doi/10.5281/zenodo.11178525)
 
-A tool for extracting/archiving files and directories in multiple formats.
+ファイルやディレクトリを複数のフォーマットで展開/圧縮するツール
 
 ## Description
-
-There are many archive formats and their tools. The one problem with using each tool is that its interfaces are slightly different.
-Then, The `FlexPress` treats the archive files as the same interface.
-The tool can extract archive files and archive files and directories.
+多くのアーカイブフォーマットとそのツールがあるが、それぞれのツールを使う際にインターフェイスが微妙に異なることが問題になります。 `FlexPress`はアーカイブファイルを同じインターフェイスとして扱う。 
 
 ## Usage
 
