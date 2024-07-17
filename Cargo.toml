@@ -1,13 +1,13 @@
 [package]
-name = "totebag"
+name = "FlexPress"
 version = "0.5.0"
 description = "A tool for extracting/archiving files and directories in multiple formats."
-repository = "https://github.com/tamada/totebag"
+repository = "https://github.com/SASA-AKITO/FlexPress"
 readme = "README.md"
 authors = [
-    "Haruaki Tamada <tamada_f@ke_cafebabe.jp>"
+    "Akito Sasahara <i2486093@cc.kyoto-su.ac.jp>"
 ]
-license = "MIT"
+license = "CC-BY-1.0"
 categories = ["command-line-utilities", "compression"]
 edition = "2021"
 
