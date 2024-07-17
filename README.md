@@ -13,22 +13,18 @@
 ## Usage
 
 ```sh
-A tool for extracting/archiving files and directories in multiple formats.
+ファイルやディレクトリを複数のフォーマットで抽出/アーカイブするツール
 
 Usage: FlexPress [OPTIONS] [ARGUMENTS]...
 
 Arguments:
-  [ARGUMENTS]...  List of files or directories to be processed.
+  [ARGUMENTS]...  処理するファイルまたはディレクトリのリスト
 
 Options:
-  -m, --mode <MODE>          Mode of operation. [default: auto] [possible values: auto, archive, extract, list]
-  -o, --output <DEST>        Output file in archive mode, or output directory in extraction mode
-      --to-archive-name-dir  extract files to DEST/ARCHIVE_NAME directory (extract mode).
-  -n, --no-recursive         No recursive directory (archive mode).
-  -v, --verbose              Display verbose output.
-      --overwrite            Overwrite existing files.
-  -h, --help                 Print help
-  -V, --version              Print version
+  -m, --mode <MODE>     操作モードを extract, archive, auto から選択する．デフォルトは auto.
+  -d, --dest <DEST>     出力先のディレクトリを指定する．デフォルトは current directory.
+  -o, --output <FILE>   アーカイブの出力ファイル．デフォルトは FlexPress.zip.
+  -h, --help            helpメッセージを表示する．
 ```
 
 Supported archive formats:
