@@ -8,7 +8,7 @@
 ファイルやディレクトリを複数のフォーマットで展開/圧縮するツール
 
 ## Description
-多くのアーカイブフォーマットとそのツールがあるが、それぞれのツールを使う際にインターフェイスが微妙に異なることが問題になります。 `FlexPress`はアーカイブファイルを同じインターフェイスとして扱う。 
+多くのアーカイブフォーマットとそのツールがあるが、それぞれのツールを使う際にインターフェイスが微妙に異なることが問題になります。 `FlexPress`はアーカイブファイルを同じインターフェイスとして扱います。 
 
 ## Usage
 
@@ -49,7 +49,7 @@ Supported archive formats:
 brew install SASA-AKITO/tap/FlexPress
 ```
 
-## :whale: Docker
+## Docker
 
 ```sh
 docker run -it --rm -v $PWD:/workdir ghcr.io/SASA-AKITO/FlexPress:0.5.0 [OPTIONS] [ARGUMENTS]...
