@@ -1,0 +1,38 @@
+
+use builtin;
+use str;
+
+set edit:completion:arg-completer[flexpress] = {|@words|
+    fn spaces {|n|
+        builtin:repeat $n ' ' | str:join ''
+    }
+    fn cand {|text desc|
+        edit:complex-candidate $text &display=$text' '(spaces (- 14 (wcswidth $text)))$desc
+    }
+    var command = 'flexpress'
+    for word $words[1..-1] {
+        if (str:has-prefix $word '-') {
+            break
+        }
+        set command = $command';'$word
+    }
+    var completions = [
+        &'flexpress'= {
+            cand -m 'Mode of operation.'
+            cand --mode 'Mode of operation.'
+            cand -o 'Output file in archive mode, or output directory in extraction mode'
+            cand --output 'Output file in archive mode, or output directory in extraction mode'
+            cand --to-archive-name-dir 'extract files to DEST/ARCHIVE_NAME directory (extract mode).'
+            cand -n 'No recursive directory (archive mode).'
+            cand --no-recursive 'No recursive directory (archive mode).'
+            cand -v 'Display verbose output.'
+            cand --verbose 'Display verbose output.'
+            cand --overwrite 'Overwrite existing files.'
+            cand -h 'Print help'
+            cand --help 'Print help'
+            cand -V 'Print version'
+            cand --version 'Print version'
+        }
+    ]
+    $completions[$command]
+}

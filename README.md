@@ -39,21 +39,6 @@ Supported archive formats:
 - Lha, Lzh (extraction only)
 - Rar (extraction only)
 
-## Install
-
-```sh
-brew install SASA-AKITO/tap/FlexPress
-```
-
-## Docker
-
-```sh
-docker run -it --rm -v $PWD:/workdir ghcr.io/SASA-AKITO/FlexPress:0.5.0 [OPTIONS] [ARGUMENTS]...
-```
-
-- **Working directory**: `/workdir`
-- **User**: `nonroot`
-
 ## About
 
 ### Authors
