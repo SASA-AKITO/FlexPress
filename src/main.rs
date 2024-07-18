@@ -102,7 +102,7 @@ mod tests {
     #[test]
     fn test_run() {
         let opts = CliOpts::parse_from(&[
-            "FlexPress_test",
+            "totebag_test",
             "-o",
             "test.zip",
             "src",
