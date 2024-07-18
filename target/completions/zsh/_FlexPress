@@ -1,8 +1,8 @@
-#compdef flexpress
+#compdef FlexPress
 
 autoload -U is-at-least
 
-_flexpress() {
+_FlexPress() {
     typeset -A opt_args
     typeset -a _arguments_options
     local ret=1
@@ -33,14 +33,14 @@ _flexpress() {
 && ret=0
 }
 
-(( $+functions[_flexpress_commands] )) ||
-_flexpress_commands() {
+(( $+functions[_FlexPress_commands] )) ||
+_FlexPress_commands() {
     local commands; commands=()
-    _describe -t commands 'flexpress commands' commands "$@"
+    _describe -t commands 'FlexPress commands' commands "$@"
 }
 
-if [ "$funcstack[1]" = "_flexpress" ]; then
-    _flexpress "$@"
+if [ "$funcstack[1]" = "_FlexPress" ]; then
+    _FlexPress "$@"
 else
-    compdef _flexpress flexpress
+    compdef _FlexPress FlexPress
 fi

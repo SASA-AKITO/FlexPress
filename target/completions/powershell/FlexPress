@@ -2,12 +2,12 @@
 using namespace System.Management.Automation
 using namespace System.Management.Automation.Language
 
-Register-ArgumentCompleter -Native -CommandName 'flexpress' -ScriptBlock {
+Register-ArgumentCompleter -Native -CommandName 'FlexPress' -ScriptBlock {
     param($wordToComplete, $commandAst, $cursorPosition)
 
     $commandElements = $commandAst.CommandElements
     $command = @(
-        'flexpress'
+        'FlexPress'
         for ($i = 1; $i -lt $commandElements.Count; $i++) {
             $element = $commandElements[$i]
             if ($element -isnot [StringConstantExpressionAst] -or
@@ -20,7 +20,7 @@ Register-ArgumentCompleter -Native -CommandName 'flexpress' -ScriptBlock {
     }) -join ';'
 
     $completions = @(switch ($command) {
-        'flexpress' {
+        'FlexPress' {
             [CompletionResult]::new('-m', 'm', [CompletionResultType]::ParameterName, 'Mode of operation.')
             [CompletionResult]::new('--mode', 'mode', [CompletionResultType]::ParameterName, 'Mode of operation.')
             [CompletionResult]::new('-o', 'o', [CompletionResultType]::ParameterName, 'Output file in archive mode, or output directory in extraction mode')

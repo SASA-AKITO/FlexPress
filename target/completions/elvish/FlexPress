@@ -2,14 +2,14 @@
 use builtin;
 use str;
 
-set edit:completion:arg-completer[flexpress] = {|@words|
+set edit:completion:arg-completer[FlexPress] = {|@words|
     fn spaces {|n|
         builtin:repeat $n ' ' | str:join ''
     }
     fn cand {|text desc|
         edit:complex-candidate $text &display=$text' '(spaces (- 14 (wcswidth $text)))$desc
     }
-    var command = 'flexpress'
+    var command = 'FlexPress'
     for word $words[1..-1] {
         if (str:has-prefix $word '-') {
             break
@@ -17,7 +17,7 @@ set edit:completion:arg-completer[flexpress] = {|@words|
         set command = $command';'$word
     }
     var completions = [
-        &'flexpress'= {
+        &'FlexPress'= {
             cand -m 'Mode of operation.'
             cand --mode 'Mode of operation.'
             cand -o 'Output file in archive mode, or output directory in extraction mode'

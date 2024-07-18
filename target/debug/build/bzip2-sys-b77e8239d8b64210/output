@@ -69,6 +69,6 @@ HOST_ARFLAGS = None
 cargo:rerun-if-env-changed=ARFLAGS
 ARFLAGS = None
 cargo:rustc-link-lib=static=bz2
-cargo:rustc-link-search=native=/Users/akito/授業/M1/春学期/エンピリカルソフトウェア/FlexPress/target/debug/build/bzip2-sys-b77e8239d8b64210/out/lib
-cargo:root=/Users/akito/授業/M1/春学期/エンピリカルソフトウェア/FlexPress/target/debug/build/bzip2-sys-b77e8239d8b64210/out
-cargo:include=/Users/akito/授業/M1/春学期/エンピリカルソフトウェア/FlexPress/target/debug/build/bzip2-sys-b77e8239d8b64210/out/include
+cargo:rustc-link-search=native=/Users/akito/Desktop/FlexPress-main/target/debug/build/bzip2-sys-b77e8239d8b64210/out/lib
+cargo:root=/Users/akito/Desktop/FlexPress-main/target/debug/build/bzip2-sys-b77e8239d8b64210/out
+cargo:include=/Users/akito/Desktop/FlexPress-main/target/debug/build/bzip2-sys-b77e8239d8b64210/out/include

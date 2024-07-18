@@ -1,5 +1,5 @@
 [package]
-name = "flexpress"
+name = "FlexPress"
 version = "0.5.0"
 description = "A tool for extracting/archiving files and directories in multiple formats."
 repository = "https://github.com/SASA-AKITO/FlexPress"
