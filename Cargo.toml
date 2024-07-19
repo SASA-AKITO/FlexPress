@@ -5,7 +5,7 @@ description = "A tool for extracting/archiving files and directories in multiple
 repository = "https://github.com/SASA-AKITO/FlexPress"
 readme = "README.md"
 authors = [
-    "Haruaki SASA-AKITO <SASA-AKITO_f@ke_cafebabe.jp>"
+    "SASA-AKITO <SASA-AKITO_i2486093@cc.kyoto-su.ac.jp@>"
 ]
 license = "MIT"
 categories = ["command-line-utilities", "compression"]
